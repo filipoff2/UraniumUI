@@ -1,0 +1,590 @@
+
+<!DOCTYPE html>
+
+<html lang="en" dir="">
+
+<!-- Mirrored from enisn-projects.io/docs/en/uranium/latest/themes/material/components/TreeView by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Jan 2023 10:16:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TT5G94G"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3WE8YTYQNC"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3WE8YTYQNC');
+</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>themes/material/components/TreeView | EnisnProjects</title>
+        <meta name="description" content="TreeView is a component that displays a hierarchical list of items. It&#x27;s a MAUI layer control with complex logic. It also comes with some pre-built behaviors like hierarchical selection." />
+    <link rel="stylesheet" href="../../../../../../../__bundles/LeptonXLite.Global.86BAF79B403556AB521761BF0380A67D1ad8.css?_v=638086745554043220" />
+
+
+    
+
+    
+<link rel="stylesheet" href="../../../../../../../__bundles/Volo.Docs.Pages.Documents.Project.IndexModel.C4E5272A756782FC0B27DF05BFBBC9EE3014.css?_v=638086745554360792" />
+
+
+
+    
+<link rel="stylesheet" href="https://enisn-projects.io/cms-kit/global-resources/style?v=1663923014"/>
+</head>
+<body class="abp-empty-layout ">
+    <script src="../../../../../../../../cdn.jsdelivr.net/npm/masonry-layout%404.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+    <div class="container-fluid">
+        
+        
+        
+
+    <div class="docs-page" data-spy="scroll" data-bs-target="#docs-sticky-index">
+        <div class="row justify-content-end">
+            <div class="col-md-3 docs-sidebar dark-sidebar">
+                <div class="docs-sidebar-wrapper">
+
+                    <div class="docs-top">
+                        <nav class="navbar navbar-logo">
+                                <a class="navbar-brand w-100" href="../../../../latest.html">
+                                    <span id="ProjectName">Uranium UI</span><br>
+                                    <strong class="display-block">
+                                        Documents
+                                    </strong>
+                                </a>
+
+                                <a href="https://enisn-projects.io/" class="go-back-site" id="GoToMainWebSite">
+                                    <i class="fa fa-chevron-left"></i>
+                                    Back to website
+                                </a>
+
+                            <div class="for-mobile">
+                                <div class="navbar-dark">
+                                    <button type="button" class="open-dmenu navbar-toggler" aria-label="Close">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="docs-tree-list">
+
+                            <div class="docs-version">
+                                <div class="version-select">
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-folder-open" aria-hidden="true" data-toggle="tooltip" title="Project"></i>
+                                        </span>
+
+                                        <select class="form-select" onchange="window.location.pathname = this.value">
+                                        <option value="/docs/en/autofilterer/latest">AutoFilterer</option>
+<option value="/docs/en/inputkit/latest">InputKit</option>
+<option selected="selected">Uranium UI</option>
+</select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <div class="row">
+                                <div class="col ">
+                                    <div class="docs-version ">
+                                        <div class="version-select">
+                                            <div class="input-group">
+
+                                                <span class="input-group-text">
+                                                    <i class="fas fa-code-branch" aria-hidden="true" data-bs-toggle="tooltip" title="Version"></i>
+                                                </span>
+
+
+                                                <select class="form-select" onchange="if (this.value) { window.location.replace(this.value) }">
+                                                <option selected="selected" value="/docs/en/uranium/latest/themes/material/components/TreeView">2.2 (latest)</option>
+<option value="/docs/en/uranium/2.1/themes/material/components/TreeView">2.1</option>
+<option value="/docs/en/uranium/2.0/themes/material/components/TreeView">2.0</option>
+<option value="/docs/en/uranium/1.1/themes/material/components/TreeView">1.1</option>
+<option value="/docs/en/uranium/1.0/themes/material/components/TreeView">1.0</option>
+</select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+
+                        <div class="docs-version">
+                            <div class="version-select">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa fa-filter"></i></span>
+                                    <input class="form-control"
+                                       id="filter"
+                                       type="search"
+                                       data-search-url="Volo.Docs.Pages.Documents.Project.IndexModel."
+                                       placeholder="Filter topics"
+                                       aria-label="Filter">
+                                </div>
+                            </div>
+                        </div>
+
+
+                            <ul id="sidebar-scroll" class="nav nav-list"><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../Getting-Started.html' class=''>Getting Started</a></li><li class='nav-header'><span class='plus-icon'><i class='fa fa-chevron-right'></i></span><a href='javascript:;' class='tree-toggle'>Infrastructure</a><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../infrastructure/UraniumContentPage.html' class=''>Uranium Content Page</a></li></ul><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../infrastructure/StatefulContentView.html' class=''>Stateful Content View</a></li></ul></li><li class='nav-header'><span class='plus-icon'><i class='fa fa-chevron-right'></i></span><a href='../../../validations/Index.html' class=''>Validations</a><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../validations/InputKitValidations.html' class=''>InputKit Validations</a></li></ul><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../validations/DataAnnotations.html' class=''>Data Annotations</a></li></ul></li><li class='nav-header'><span class='plus-icon'><i class='fa fa-chevron-right'></i></span><a href='javascript:;' class='tree-toggle'>Theming</a><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../theming/ColorSystem.html' class=''>Color System</a></li></ul><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../theming/Icons.html' class=''>Icons</a></li></ul><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../theming/CascadingStyling.html' class=''>Cascading Styling</a></li></ul><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../theming/CreatingTheme.html' class=''>Creating a Theme</a></li></ul></li><li class='nav-header selected-tree'><span class='plus-icon'><i class='fa fa-chevron-right'></i></span><a href='javascript:;' class='tree-toggle'>Material Theme</a><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../ColorsAndStyles.html' class=''>Colors & Styles</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../Elevation.html' class=''>Elevation</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../ButtonView.html' class=''>ButtonView</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../Buttons.html' class=''>Buttons</a></li></ul><ul class='nav nav-list tree' style=''><li class='nav-header'><span class='plus-icon'><i class='fa fa-chevron-right'></i></span><a href='InputField.html' class=''>InputFields</a><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='TextField.html' class=''>TextField</a></li></ul><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='AutoCompleteTextField.html' class=''>AutoCompleteTextField</a></li></ul><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='PickerField.html' class=''>PickerField</a></li></ul><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='TimePickerField.html' class=''>TimePickerField</a></li></ul><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='DatePickerField.html' class=''>DatePickerField</a></li></ul></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../Validations.html' class=''>Validations</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../CheckBox.html' class=''>CheckBox</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../RadioButton.html' class=''>RadioButton</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../Dialogs.html' class=''>Dialogs</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../Divider.html' class=''>Divider</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='Backdrop.html' class=''>Backdrop</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='BottomSheet.html' class=''>Bottom Sheet</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='DataGrid.html' class=''>DataGrid</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link selected-tree'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='TreeView.html' class=''>TreeView</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='TabView.html' class=''>TabView</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../Containers.html' class=''>Containers</a></li></ul></li><li class='nav-header'><span class='plus-icon'><i class='fa fa-chevron-right'></i></span><a href='javascript:;' class='tree-toggle'>Migration Guide</a><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../migration-guides/Migrating-To-1.html' class=''>Migration to v1.1</a></li></ul><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../migration-guides/Migrating-To-2.html' class=''>Migration to v2.0</a></li></ul><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../migration-guides/Migrating-To-3.html' class=''>Migration to v2.1</a></li></ul><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../migration-guides/Migrating-To-4.html' class=''>Migration to v2.2</a></li></ul></li><li class='nav-header'><span class='plus-icon'><i class='fa fa-chevron-right'></i></span><a href='../../../Support.html' class=''>Support</a><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../PremiumSupport.html' class=''>Premium Support</a></li></ul></li></ul>
+                    </div>
+
+                </div>
+            </div>
+
+                <div class="col-md-7 docs-content bg-white">
+                    <div class="docs-link-btns">
+                        <div class="row">
+                            <div class="col">
+                            </div>
+                            <div class="col-auto">
+                                <div class="cont-container">
+                                        <span class="for-desktop me-3">
+                                            Contributors
+                                        </span>
+                                            <a href="https://github.com/enisn" target="_blank" class="cont-avatar">
+                                                <img src="https://avatars.githubusercontent.com/u/23705418?v=4"
+                                     class="rounded-circle"
+                                     alt="Avatar"
+                                     height="21"
+                                     width="21"
+                                     title="enisn" />
+                                            </a>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                    <a href="https://github.com/enisn/UraniumUI/blob/rel-2.2/docs/en/themes/material/components/TreeView.md" target="_blank">
+                                        <i class="fa fa-edit"></i>
+                                        Edit
+                                        <span class="for-desktop text-muted">Last edit: 12/23/2022</span>
+                                    </a>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="docs-content-field">
+                        <div class="docs-text-field">
+                            <div class="position-relative">
+                            </div>
+
+                            <div data-spy="scroll" data-bs-target="#docs-sticky-index" data-offset="0">
+                                <article class="docs-body">
+
+                                    <h1>TreeView</h1>
+<p>TreeView is a component that displays a hierarchical list of items. It's a MAUI layer control with complex logic. It also comes with some pre-built behaviors like hierarchical selection.</p>
+<h2>Usage</h2>
+<p>TreeView is included in the <code>UraniumUI.Material.Controls</code> namespace. You should add it to your XAML like this:</p>
+<pre ><code class="language-xml">xmlns:material=&quot;http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material&quot;
+</code></pre>
+<p>Then you can use it like this:</p>
+<pre ><code class="language-xml">&lt;material:TreeView ItemsSource=&quot;{Binding Nodes}&quot; /&gt;
+</code></pre>
+<p>TreeView doesn't have any visual appearance without data. You should bind some data to see the control.</p>
+<h3>Data Binding</h3>
+<p>Prepare a ViewModel that contain a list of a node object. Node means a single item in the tree. It can be a folder or a file. It can be a person or a company. It can be a country or a city. It can be anything. It's up to you. So there is no type limitation or no interface implementation required for your object. It can be a simple object that should have a <code>Children</code> property that includes list of same type of the object when hierarchical data is required.
+A simple example of a node object:</p>
+<pre ><code class="language-csharp"> public class MyItem
+{
+    public MyItem()
+    {
+    }
+
+    public MyItem(string name) // For easy initialization (optional)
+    {
+        Name = name;
+    }
+
+    public virtual string Name { get; set; }
+    public virtual IList&lt;MyItem&gt; Children { get; set; } = new ObservableCollection&lt;MyItem&gt;();
+}
+</code></pre>
+<p>Initialize your ViewModel with some data:</p>
+<pre ><code class="language-csharp">public class MyViewModel : BindableObject
+{
+
+    public ObservableCollection&lt;MyItem&gt; Nodes { get; set; } = new();
+
+    public TreeViewPageViewModel()
+    {
+        Nodes.Add(new MyItem(&quot;A&quot;)
+        {
+            Children =
+            {
+                new MyItem(&quot;A.1&quot;),
+                new MyItem(&quot;A.2&quot;),
+            }
+        });
+        Nodes.Add(new MyItem(&quot;B&quot;)
+        {
+            Children =
+            {
+                new MyItem(&quot;B.1&quot;)
+                {
+                    Children =
+                    {
+                        new MyItem(&quot;B.1.a&quot;),
+                        new MyItem(&quot;B.1.b&quot;),
+                        new MyItem(&quot;B.1.c&quot;),
+                        new MyItem(&quot;B.1.d&quot;),
+
+                    }
+                },
+                new MyItem(&quot;B.2&quot;),
+            }
+        });
+        Nodes.Add(new MyItem(&quot;C&quot;));
+        Nodes.Add(new MyItem(&quot;D&quot;));
+    }
+}
+</code></pre>
+<p>Now you can bind your ViewModel to the TreeView:</p>
+<pre ><code class="language-xml">&lt;material:TreeView ItemsSource=&quot;{Binding Nodes}&quot; /&gt;
+</code></pre>
+<table class="table">
+<thead>
+<tr>
+<th>Light</th>
+<th>Dark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target = "_blank" rel="noopener noreferrer" title="TreeView Light" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-demo-light-android.gif"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-demo-light-android.gif"  class="img-fluid" alt="TreeView Light" /></a></td>
+<td><a target = "_blank" rel="noopener noreferrer" title="TreeView Dark" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-demo-dark-windows.gif"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-demo-dark-windows.gif"  class="img-fluid" alt="TreeView Dark" /></a></td>
+</tr>
+</tbody>
+</table>
+<h3>ItemTemplate</h3>
+<p>You can customize nodes with <code>ItemTemplate</code>. It's just like a <code>ListView</code> or <code>CollectionView</code>:</p>
+<pre ><code class="language-xml">&lt;material:TreeView ItemsSource=&quot;{Binding Nodes}&quot;&gt;
+    &lt;material:TreeView.ItemTemplate&gt;
+        &lt;DataTemplate&gt;
+            &lt;HorizontalStackLayout Spacing=&quot;5&quot;&gt;
+                &lt;Image Source=&quot;{FontImageSource FontFamily=MaterialRegular, Glyph={x:Static m:MaterialRegular.Folder}, Color={StaticResource Primary}}&quot; /&gt;
+                &lt;Label Text=&quot;{Binding Name}&quot; FontAttributes=&quot;Bold&quot; /&gt;
+                &lt;Label Text=&quot;{Binding Children.Count, StringFormat='({0})'}&quot; /&gt;
+            &lt;/HorizontalStackLayout&gt;
+        &lt;/DataTemplate&gt;
+    &lt;/material:TreeView.ItemTemplate&gt;
+&lt;/material:TreeView&gt;
+</code></pre>
+<table class="table">
+<thead>
+<tr>
+<th>Light</th>
+<th>Dark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target = "_blank" rel="noopener noreferrer" title="MAUI Custom TreeView" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-itemtemplate-light-android.png"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-itemtemplate-light-android.png"  class="img-fluid" alt="MAUI Custom TreeView" /></a></td>
+<td><a target = "_blank" rel="noopener noreferrer" title="MAUI Custom TreeView" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-itemtemplate-dark-windows.png"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-itemtemplate-dark-windows.png"  class="img-fluid" alt="MAUI Custom TreeView" /></a></td>
+</tr>
+</tbody>
+</table>
+<h3>IsExpandedPropertyName</h3>
+<p>You can bind expanding property to a property of your node object. It's useful when you want to save the state of the tree. For example, you can save the state of the tree in the local storage and restore it when the user opens the app again. To do this, you should set <code>IsExpandedPropertyName</code> property of the TreeView to the name of the property that contains the state of the node. For example, if you have a <code>IsExtended</code> property in your node object, you should set <code>IsExpandedPropertyName</code> to <code>IsExtended</code>:</p>
+<pre ><code class="language-xml"> &lt;material:TreeView ItemsSource=&quot;{Binding Nodes}&quot; IsExpandedPropertyName=&quot;IsExtended&quot;&gt;
+</code></pre>
+<pre ><code class="language-csharp">public TreeViewPageViewModel()
+{
+    // ...
+
+    Nodes[1].IsExtended = true;
+    Nodes[1].Children[0].IsExtended = true;
+}
+</code></pre>
+<p>They will be rendered as expanded when treeview is initialized.</p>
+<h3>IsLeafPropertyName</h3>
+<p>If the node object contain its children in a different property, you can set <code>IsLeafPropertyName</code> property of the TreeView to the name of the property that contains the state of the node. Default value is <code>IsLeaf</code>. If you have a <code>IsLeaf</code> property in your node object, it'll be automatically binded. If your property that declares leaf state has a different name, you should consider to set <code>IsLeafPropertyName</code>.</p>
+<pre ><code class="language-xml"> &lt;material:TreeView ItemsSource=&quot;{Binding Nodes}&quot; IsLeafPropertyName=&quot;IsLeaf&quot; /&gt;
+</code></pre>
+<blockquote class="blockquote">
+<p>Note: <strong>Leaf</strong> status is already managed by the TreeView. But when lazy-loading is used, TreeView can't know if the node is a leaf or not. So you should set <code>IsLeafPropertyName</code> to the name of the property that contains the state of the node.</p>
+</blockquote>
+<h3>ChildrenBinding</h3>
+<p>If the node object contain its children in a different property, you can set <code>ChildrenBinding</code> property of the TreeView to the name of the property that contains the children. For example, if you have a <code>SubItems</code> property in your node object, you should set <code>ChildrenBinding</code> to <code>SubItems</code>:</p>
+<pre ><code class="language-xml"> &lt;material:TreeView ItemsSource=&quot;{Binding Nodes}&quot; ChildrenBinding=&quot;{Binding SubItems}&quot; /&gt;
+</code></pre>
+<hr />
+<h2>Customizations</h2>
+<p>TreeView allows you to customize its appearance in a couple of ways.</p>
+<h3>ArrowColor</h3>
+<p>You can change the color of the arrow icon with <code>ArrowColor</code> property:</p>
+<pre ><code class="language-xml">&lt;material:TreeView ItemsSource=&quot;{Binding Nodes}&quot; ArrowColor=&quot;{StaticResource Primary}&quot;/&gt;
+</code></pre>
+<table class="table">
+<thead>
+<tr>
+<th>Light</th>
+<th>Dark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target = "_blank" rel="noopener noreferrer" title="TreeView Light" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-arrowcolor-light-android.png"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-arrowcolor-light-android.png"  class="img-fluid" alt="TreeView Light" /></a></td>
+<td><a target = "_blank" rel="noopener noreferrer" title="TreeView Dark" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-arrowcolor-dark-windows.png"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-arrowcolor-dark-windows.png"  class="img-fluid" alt="TreeView Dark" /></a></td>
+</tr>
+</tbody>
+</table>
+<h3>Spacing</h3>
+<p>You can change the spacing between the arrow icon and the content with <code>Spacing</code> property. Default value is <code>10</code>.</p>
+<pre ><code class="language-xml">&lt;material:TreeView ItemsSource=&quot;{Binding Nodes}&quot; Spacing=&quot;25&quot;/&gt;
+</code></pre>
+<p><a target = "_blank" rel="noopener noreferrer" title="TreeView Spacing" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-spacing-dark-android.png"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-spacing-dark-android.png"  class="img-fluid" alt="TreeView Spacing" /></a></p>
+<h3>ExpanderTemplate</h3>
+<p>You can completely customize the expander with <code>ExpanderTemplate</code> property. It's an arrow by default. You can use any view as an expander. For example, you can use a <code>Switch</code> to expand and collapse nodes.</p>
+<p>You can use following binding properties in the <code>ExpanderTemplate</code>:</p>
+<ul>
+<li><code>IsExpanded</code> - <code>true</code> if the node is expanded, otherwise <code>false</code>.</li>
+<li><code>IsLeaf</code> - <code>true</code> if the node is a leaf, otherwise <code>false</code>. You can use it to manage visibility of the control.</li>
+</ul>
+<pre ><code class="language-xml">&lt;material:TreeView ItemsSource=&quot;{Binding Nodes}&quot;&gt;
+    &lt;material:TreeView.ExpanderTemplate&gt;
+        &lt;DataTemplate&gt;
+            &lt;Switch IsToggled=&quot;{Binding IsExpanded}&quot; /&gt;
+        &lt;/DataTemplate&gt;
+    &lt;/material:TreeView.ExpanderTemplate&gt;
+&lt;/material:TreeView&gt;
+</code></pre>
+<p><a target = "_blank" rel="noopener noreferrer" title="Treeview Expander" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-expander-dark-android.gif"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-expander-dark-android.gif"  class="img-fluid" alt="Treeview Expander" /></a></p>
+<h3>UseAnimation</h3>
+<p>Determines whether to use animations when expanding and collapsing nodes. Default value is <code>true</code>. You may want to disable animations if you want to improve performance while working with huge amount of tree nodes.</p>
+<pre ><code class="language-xml">&lt;material:TreeView ItemsSource=&quot;{Binding Nodes}&quot; UseAnimation=&quot;False&quot;/&gt;
+</code></pre>
+<table class="table">
+<thead>
+<tr>
+<th>Enabled</th>
+<th>Disabled</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target = "_blank" rel="noopener noreferrer" title="TreeView Animations Enabled" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-useanimation-dark-windows-enabled.gif"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-useanimation-dark-windows-enabled.gif"  class="img-fluid" alt="TreeView Animations Enabled" /></a></td>
+<td><a target = "_blank" rel="noopener noreferrer" title="TreeView Animations Disabled" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-useanimation-dark-windows-disabled.gif"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-useanimation-dark-windows-disabled.gif"  class="img-fluid" alt="TreeView Animations Disabled" /></a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Selection</h2>
+<p>TreeView has a special behavior for CheckBoxes. TreeView supports hierarchical selection. It means that when you select a parent node, all of its children will be selected. When you deselect a parent node, all of its children will be deselected. When some of children is selected, CheckBox will enter semi-selected state. It's useful when you want to select a group of items. For example, you can select all files in a folder.</p>
+<p>TreeView provides <code>TreeViewHierarchicalSelectBehavior</code> that can be used only with <code>CheckBox</code> when it's directly ItemTemplate of the TreeView.</p>
+<pre ><code class="language-xml">&lt;material:TreeView ItemsSource=&quot;{Binding Nodes}&quot;&gt;
+    &lt;material:TreeView.ItemTemplate&gt;
+        &lt;DataTemplate&gt;
+            &lt;material:CheckBox Text=&quot;{Binding Name}&quot;&gt;
+                &lt;material:CheckBox.Behaviors&gt;
+                    &lt;material:TreeViewHierarchicalSelectBehavior /&gt;
+                &lt;/material:CheckBox.Behaviors&gt;
+            &lt;/material:CheckBox&gt;
+        &lt;/DataTemplate&gt;
+    &lt;/material:TreeView.ItemTemplate&gt;
+&lt;/material:TreeView&gt;
+</code></pre>
+<table class="table">
+<thead>
+<tr>
+<th>Light</th>
+<th>Dark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target = "_blank" rel="noopener noreferrer" title="TreeView Light" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-selection-light-android.gif"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-selection-light-android.gif"  class="img-fluid" alt="TreeView Light" /></a></td>
+<td><a target = "_blank" rel="noopener noreferrer" title="TreeView Dark" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-selection-dark-windows.gif"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-selection-dark-windows.gif"  class="img-fluid" alt="TreeView Dark" /></a></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>Lazy-Loading</h2>
+<p>TreeView supports lazy-loading of children. It means that children will be loaded only when the node is expanded. TreeView executes <code>LoadChildrenCommand</code> command with node item that is expanded as parameter when the node is expanded. You can set <code>LoadChildrenCommand</code> property of the TreeView to the command that will be executed when the node is expanded. For example, you can load children from the database when the node is expanded.</p>
+<p>Following properies can be used to define a propert lazy-loading behavior:</p>
+<ul>
+<li><code>IsLeafPropertyName</code> - The name of the property that contains the state of the node. Default value is <code>IsLeaf</code>.</li>
+<li><code>LoadChildrenCommand</code> - The command that will be executed when the node is expanded.</li>
+</ul>
+<h3>Example</h3>
+<p>A file system is a good example of lazy-loading. When you open a folder, you don't want to load all of its children. You want to load children only when the folder is expanded. You can use <code>LoadChildrenCommand</code> to load children from the database when the folder is expanded.</p>
+<pre ><code class="language-csharp">public class TreeViewFileSystemViewModel : UraniumBindableObject
+{
+    public ObservableCollection&lt;NodeItem&gt; Nodes { get; private set; }
+
+    public ICommand LoadChildrenCommand { get; set; }
+
+    public TreeViewFileSystemViewModel()
+    {
+        InitializeNodes();
+        LoadChildrenCommand = new Command&lt;NodeItem&gt;((node) =&gt;
+        {
+            foreach (var item in GetContent(node.Path))
+            {
+                node.Children.Add(item);
+            }
+
+            if (node.Children.Count == 0)
+            {
+                node.IsLeaf = true;
+            }
+        });
+    }
+
+    void InitializeNodes()
+    {
+        var path = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+
+        if (DeviceInfo.Platform == DevicePlatform.WinUI)
+        {
+            path = &quot;C:\\&quot;;
+        }
+
+        Nodes = new ObservableCollection&lt;NodeItem&gt;(
+            GetContent(path));
+    }
+
+    IEnumerable&lt;NodeItem&gt; GetContent(string dir)
+    {
+        var directories = Directory.GetDirectories(dir);
+        foreach (string d in directories)
+        {
+            yield return new NodeItem
+            {
+                Name = d.Split(Path.DirectorySeparatorChar).LastOrDefault(),
+                Path = d,
+                IsDirectory = true,
+                IsLeaf = false,
+            };
+        }
+        var files = Directory.GetFiles(dir);
+
+        foreach (string f in files)
+        {
+            var node = new NodeItem
+            {
+                Name = f.Split(Path.DirectorySeparatorChar).LastOrDefault(),
+                Path = f,
+                IsDirectory = false,
+                IsLeaf = true,
+            };
+            yield return node;
+        }
+    }
+
+    public class NodeItem : UraniumBindableObject
+    {
+        private bool isLeaf;
+
+        public string Name { get; set; }
+        public string Path { get; set; }
+        public bool IsDirectory { get; set; }
+        public bool IsLeaf { get =&gt; isLeaf; set =&gt; SetProperty(ref isLeaf, value); }
+        public ObservableCollection&lt;NodeItem&gt; Children { get; } = new();
+    }
+}
+</code></pre>
+<pre ><code class="language-xml">&lt;material:TreeView 
+        ItemsSource=&quot;{Binding Nodes}&quot; 
+        LoadChildrenCommand=&quot;{Binding LoadChildrenCommand}&quot;&gt;
+    &lt;material:TreeView.ItemTemplate&gt;
+        &lt;DataTemplate&gt;
+            &lt;HorizontalStackLayout Spacing=&quot;5&quot; VerticalOptions=&quot;Center&quot;&gt;
+                &lt;Image&gt;
+                    &lt;Image.Triggers&gt;
+                        &lt;DataTrigger TargetType=&quot;Image&quot; Binding=&quot;{Binding IsDirectory}&quot; Value=&quot;True&quot;&gt;
+                            &lt;Setter Property=&quot;Source&quot; Value=&quot;{FontImageSource FontFamily=MaterialRegular, Glyph={x:Static m:MaterialRegular.Folder}, Color={AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}}&quot; /&gt;
+                        &lt;/DataTrigger&gt;
+                        &lt;DataTrigger TargetType=&quot;Image&quot; Binding=&quot;{Binding IsDirectory}&quot; Value=&quot;False&quot;&gt;
+                            &lt;Setter Property=&quot;Source&quot; Value=&quot;{FontImageSource FontFamily=MaterialRegular, Glyph={x:Static m:MaterialRegular.Insert_drive_file}, Color={AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource PrimaryDark}}}&quot; /&gt;
+                        &lt;/DataTrigger&gt;
+                    &lt;/Image.Triggers&gt;
+                &lt;/Image&gt;
+                &lt;Label Text=&quot;{Binding Name}&quot; FontAttributes=&quot;Bold&quot; /&gt;
+            &lt;/HorizontalStackLayout&gt;
+        &lt;/DataTemplate&gt;
+    &lt;/material:TreeView.ItemTemplate&gt;
+&lt;/material:TreeView&gt;
+</code></pre>
+<table class="table">
+<thead>
+<tr>
+<th>Dark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target = "_blank" rel="noopener noreferrer" title="MAUI TreeView lazy-loading" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-filesystem-dark-windows.gif"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/treeview-filesystem-dark-windows.gif"  class="img-fluid" alt="MAUI TreeView lazy-loading" /></a></td>
+</tr>
+</tbody>
+</table>
+
+                                </article>
+
+                                <div id="crawler_link" style="display:none;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Bar -->
+                <div class="col-md-2 docs-page-index position-relative bg-light">
+                    <div class="doc-social-btns">
+                        Share on :
+                        <a href="#" target="_blank" class="share-button twitter" id="TwitterShareLink" title="Twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank" class="share-button linkedin" id="LinkedinShareLink" title="LinkedIn">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="#" target="_blank" class="share-button email" id="EmailShareLink" title="E-mail">
+                            <i class="fa fa-envelope-square"></i>
+                        </a>
+                    </div>
+                    <div id="scroll-index" class="docs-inner-anchors mt-2">
+                        <h5>In this document</h5>
+                        <nav id="docs-sticky-index" class="navbar index-scroll">
+                        </nav>
+
+                        <div class="row">
+                            <div class="col p-0 py-3">
+                                <a href="javascript:;" class="scroll-top-btn"><i class="fa fa-chevron-up"></i> Go to top</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+        
+    </div>
+
+    <script  src="../../../../../../../__bundles/LeptonXLite.Global.FC83D7F8612BD7822731B6AA6B2E1931cbc7.js?_v=638086745563896856"></script>
+<script  src="../../../../../../../libs/timeago/locales/jquery.timeago.enf9f5.js?_v=637914133550000000"></script>
+
+
+    <script src="https://enisn-projects.io/Abp/ApplicationConfigurationScript"></script>
+    <script src="https://enisn-projects.io/Abp/ServiceProxyScript"></script>
+
+    
+<script  src="../../../../../../../__bundles/Volo.Docs.Pages.Documents.Project.IndexModel.5776DACC59CA0A0ADAD25FA8CB5F368D107d.js?_v=638086745565050551"></script>
+
+
+
+    
+
+    <script src="../../../../../../../../cdn.jsdelivr.net/npm/masonry-layout%404.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script><script src="https://enisn-projects.io/cms-kit/global-resources/script"></script>
+
+</body>
+
+<!-- Mirrored from enisn-projects.io/docs/en/uranium/latest/themes/material/components/TreeView by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Jan 2023 10:16:49 GMT -->
+</html>

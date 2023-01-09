@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+
+<html lang="en" dir="">
+
+<!-- Mirrored from enisn-projects.io/docs/en/uranium/latest/themes/material/components/TimePickerField by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Jan 2023 10:16:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TT5G94G"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3WE8YTYQNC"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3WE8YTYQNC');
+</script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>themes/material/components/TimePickerField | EnisnProjects</title>
+        <meta name="description" content="TimePickerField is a control that allows users to select a time. It is a wrapper around the TimePicker control and makes it in line with the material design guidelines." />
+    <link rel="stylesheet" href="../../../../../../../__bundles/LeptonXLite.Global.86BAF79B403556AB521761BF0380A67D1ad8.css?_v=638086745554043220" />
+
+
+    
+
+    
+<link rel="stylesheet" href="../../../../../../../__bundles/Volo.Docs.Pages.Documents.Project.IndexModel.C4E5272A756782FC0B27DF05BFBBC9EE3014.css?_v=638086745554360792" />
+
+
+
+    
+<link rel="stylesheet" href="https://enisn-projects.io/cms-kit/global-resources/style?v=1663923014"/>
+</head>
+<body class="abp-empty-layout ">
+    <script src="../../../../../../../../cdn.jsdelivr.net/npm/masonry-layout%404.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+    <div class="container-fluid">
+        
+        
+        
+
+    <div class="docs-page" data-spy="scroll" data-bs-target="#docs-sticky-index">
+        <div class="row justify-content-end">
+            <div class="col-md-3 docs-sidebar dark-sidebar">
+                <div class="docs-sidebar-wrapper">
+
+                    <div class="docs-top">
+                        <nav class="navbar navbar-logo">
+                                <a class="navbar-brand w-100" href="../../../../latest.html">
+                                    <span id="ProjectName">Uranium UI</span><br>
+                                    <strong class="display-block">
+                                        Documents
+                                    </strong>
+                                </a>
+
+                                <a href="https://enisn-projects.io/" class="go-back-site" id="GoToMainWebSite">
+                                    <i class="fa fa-chevron-left"></i>
+                                    Back to website
+                                </a>
+
+                            <div class="for-mobile">
+                                <div class="navbar-dark">
+                                    <button type="button" class="open-dmenu navbar-toggler" aria-label="Close">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="docs-tree-list">
+
+                            <div class="docs-version">
+                                <div class="version-select">
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-folder-open" aria-hidden="true" data-toggle="tooltip" title="Project"></i>
+                                        </span>
+
+                                        <select class="form-select" onchange="window.location.pathname = this.value">
+                                        <option value="/docs/en/autofilterer/latest">AutoFilterer</option>
+<option value="/docs/en/inputkit/latest">InputKit</option>
+<option selected="selected">Uranium UI</option>
+</select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <div class="row">
+                                <div class="col ">
+                                    <div class="docs-version ">
+                                        <div class="version-select">
+                                            <div class="input-group">
+
+                                                <span class="input-group-text">
+                                                    <i class="fas fa-code-branch" aria-hidden="true" data-bs-toggle="tooltip" title="Version"></i>
+                                                </span>
+
+
+                                                <select class="form-select" onchange="if (this.value) { window.location.replace(this.value) }">
+                                                <option selected="selected" value="/docs/en/uranium/latest/themes/material/components/TimePickerField">2.2 (latest)</option>
+<option value="/docs/en/uranium/2.1/themes/material/components/TimePickerField">2.1</option>
+<option value="/docs/en/uranium/2.0/themes/material/components/TimePickerField">2.0</option>
+<option value="/docs/en/uranium/1.1/themes/material/components/TimePickerField">1.1</option>
+<option value="/docs/en/uranium/1.0/themes/material/components/TimePickerField">1.0</option>
+</select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+
+                        <div class="docs-version">
+                            <div class="version-select">
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fa fa-filter"></i></span>
+                                    <input class="form-control"
+                                       id="filter"
+                                       type="search"
+                                       data-search-url="Volo.Docs.Pages.Documents.Project.IndexModel."
+                                       placeholder="Filter topics"
+                                       aria-label="Filter">
+                                </div>
+                            </div>
+                        </div>
+
+
+                            <ul id="sidebar-scroll" class="nav nav-list"><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../Getting-Started.html' class=''>Getting Started</a></li><li class='nav-header'><span class='plus-icon'><i class='fa fa-chevron-right'></i></span><a href='javascript:;' class='tree-toggle'>Infrastructure</a><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../infrastructure/UraniumContentPage.html' class=''>Uranium Content Page</a></li></ul><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../infrastructure/StatefulContentView.html' class=''>Stateful Content View</a></li></ul></li><li class='nav-header'><span class='plus-icon'><i class='fa fa-chevron-right'></i></span><a href='../../../validations/Index.html' class=''>Validations</a><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../validations/InputKitValidations.html' class=''>InputKit Validations</a></li></ul><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../validations/DataAnnotations.html' class=''>Data Annotations</a></li></ul></li><li class='nav-header'><span class='plus-icon'><i class='fa fa-chevron-right'></i></span><a href='javascript:;' class='tree-toggle'>Theming</a><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../theming/ColorSystem.html' class=''>Color System</a></li></ul><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../theming/Icons.html' class=''>Icons</a></li></ul><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../theming/CascadingStyling.html' class=''>Cascading Styling</a></li></ul><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../theming/CreatingTheme.html' class=''>Creating a Theme</a></li></ul></li><li class='nav-header selected-tree'><span class='plus-icon'><i class='fa fa-chevron-right'></i></span><a href='javascript:;' class='tree-toggle'>Material Theme</a><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../ColorsAndStyles.html' class=''>Colors & Styles</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../Elevation.html' class=''>Elevation</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../ButtonView.html' class=''>ButtonView</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../Buttons.html' class=''>Buttons</a></li></ul><ul class='nav nav-list tree' style=''><li class='nav-header selected-tree'><span class='plus-icon'><i class='fa fa-chevron-right'></i></span><a href='InputField.html' class=''>InputFields</a><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='TextField.html' class=''>TextField</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='AutoCompleteTextField.html' class=''>AutoCompleteTextField</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='PickerField.html' class=''>PickerField</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link selected-tree'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='TimePickerField.html' class=''>TimePickerField</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='DatePickerField.html' class=''>DatePickerField</a></li></ul></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../Validations.html' class=''>Validations</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../CheckBox.html' class=''>CheckBox</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../RadioButton.html' class=''>RadioButton</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../Dialogs.html' class=''>Dialogs</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../Divider.html' class=''>Divider</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='Backdrop.html' class=''>Backdrop</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='BottomSheet.html' class=''>Bottom Sheet</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='DataGrid.html' class=''>DataGrid</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='TreeView.html' class=''>TreeView</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='TabView.html' class=''>TabView</a></li></ul><ul class='nav nav-list tree' style=''><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../Containers.html' class=''>Containers</a></li></ul></li><li class='nav-header'><span class='plus-icon'><i class='fa fa-chevron-right'></i></span><a href='javascript:;' class='tree-toggle'>Migration Guide</a><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../migration-guides/Migrating-To-1.html' class=''>Migration to v1.1</a></li></ul><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../migration-guides/Migrating-To-2.html' class=''>Migration to v2.0</a></li></ul><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../migration-guides/Migrating-To-3.html' class=''>Migration to v2.1</a></li></ul><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../migration-guides/Migrating-To-4.html' class=''>Migration to v2.2</a></li></ul></li><li class='nav-header'><span class='plus-icon'><i class='fa fa-chevron-right'></i></span><a href='../../../Support.html' class=''>Support</a><ul class='nav nav-list tree' style='display: none;'><li class='last-link'><span class='plus-icon'><i class='fa fa-long-arrow-right has-link'></i></span><a href='../../../PremiumSupport.html' class=''>Premium Support</a></li></ul></li></ul>
+                    </div>
+
+                </div>
+            </div>
+
+                <div class="col-md-7 docs-content bg-white">
+                    <div class="docs-link-btns">
+                        <div class="row">
+                            <div class="col">
+                            </div>
+                            <div class="col-auto">
+                                <div class="cont-container">
+                                        <span class="for-desktop me-3">
+                                            Contributors
+                                        </span>
+                                            <a href="https://github.com/enisn" target="_blank" class="cont-avatar">
+                                                <img src="https://avatars.githubusercontent.com/u/23705418?v=4"
+                                     class="rounded-circle"
+                                     alt="Avatar"
+                                     height="21"
+                                     width="21"
+                                     title="enisn" />
+                                            </a>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                    <a href="https://github.com/enisn/UraniumUI/blob/rel-2.2/docs/en/themes/material/components/TimePickerField.md" target="_blank">
+                                        <i class="fa fa-edit"></i>
+                                        Edit
+                                        <span class="for-desktop text-muted">Last edit: 11/21/2022</span>
+                                    </a>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="docs-content-field">
+                        <div class="docs-text-field">
+                            <div class="position-relative">
+                            </div>
+
+                            <div data-spy="scroll" data-bs-target="#docs-sticky-index" data-offset="0">
+                                <article class="docs-body">
+
+                                    <h1>TimePickerField</h1>
+<p>TimePickerField is a control that allows users to select a time. It is a wrapper around the TimePicker control and makes it in line with the material design guidelines.</p>
+<ul>
+<li><a href="https://material.io/components/time-pickers">Material Design Date Pickers</a></li>
+</ul>
+<h2>Usage</h2>
+<p>TimePickerField is included in the <code>UraniumUI.Material.Controls</code> namespace. You should add it to your XAML like this:</p>
+<pre ><code class="language-xml">xmlns:material=&quot;http://schemas.enisn-projects.io/dotnet/maui/uraniumui/material&quot;
+</code></pre>
+<p>Then you can use it like this:</p>
+<pre ><code class="language-xml">&lt;material:TimePickerField Title=&quot;Pick a Time&quot; /&gt;
+</code></pre>
+<table class="table">
+<thead>
+<tr>
+<th>Light</th>
+<th>Dark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target = "_blank" rel="noopener noreferrer" title="MAUI Material Design TimePicker" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/timepickerfield-demo-light-android.gif"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/timepickerfield-demo-light-android.gif"  class="img-fluid" alt="MAUI Material Design TimePicker" /></a></td>
+<td><a target = "_blank" rel="noopener noreferrer" title="MAUI Material Design TimePicker" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/timepickerfield-demo-dark-windows.gif"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/timepickerfield-demo-dark-windows.gif"  class="img-fluid" alt="MAUI Material Design TimePicker" /></a></td>
+</tr>
+</tbody>
+</table>
+<h2>Icon</h2>
+<p>TimePickerFields support setting an icon on the left side of the control. You can set the icon by setting the <code>Icon</code> property. The icon can be any <code>ImageSource</code> object. FontImageSource is recommended as Icon since its color can be changed when focused.</p>
+<table class="table">
+<thead>
+<tr>
+<th>Light</th>
+<th>Dark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target = "_blank" rel="noopener noreferrer" title="MAUI Material Input" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/timepickerfield-icon-light-android.png"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/timepickerfield-icon-light-android.png"  class="img-fluid" alt="MAUI Material Input" /></a></td>
+<td><a target = "_blank" rel="noopener noreferrer" title="MAUI Material Input" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/timepickerfield-icon-dark-android.png"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/timepickerfield-icon-dark-android.png"  class="img-fluid" alt="MAUI Material Input" /></a></td>
+</tr>
+</tbody>
+</table>
+<h2>AllowClear</h2>
+<p>TimePickerFields support clearing the selected time by setting the <code>AllowClear</code> property to <code>true</code>. Default value is <code>true</code>. You can make it <code>false</code> to disable clearing.</p>
+<pre ><code class="language-xml">&lt;material:TimePickerField 
+    Title=&quot;Pick a Time (Clearable)&quot;
+    AllowClear=&quot;True&quot; /&gt;
+
+&lt;material:TimePickerField 
+    Title=&quot;Pick a Time (Unclearable)&quot;
+    AllowClear=&quot;False&quot; /&gt;
+</code></pre>
+<table class="table">
+<thead>
+<tr>
+<th>Dark</th>
+<th>Light</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target = "_blank" rel="noopener noreferrer" title="MAUI Material Input" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/timepickerfield-allowclear-dark-android.gif"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/timepickerfield-allowclear-dark-android.gif"  class="img-fluid" alt="MAUI Material Input" /></a></td>
+<td><a target = "_blank" rel="noopener noreferrer" title="MAUI Material Input" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/timepickerfield-allowclear-light-android.gif"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/timepickerfield-allowclear-light-android.gif"  class="img-fluid" alt="MAUI Material Input" /></a></td>
+</tr>
+</tbody>
+</table>
+<h2>Validation</h2>
+<p>TimePickerField supports validation rules such as <code>MinValueValidation</code> and <code>MaxValueValidation</code>. You can use them like this:</p>
+<pre ><code class="language-xml">&lt;material:TimePickerField Title=&quot;Pick a time&quot; Icon=&quot;{FontImageSource FontFamily=MaterialRegular, Glyph={x:Static m:MaterialRegular.Alarm}}&quot;&gt;
+    &lt;validation:MinValueValidation MinValue=&quot;09:00&quot; /&gt;
+    &lt;validation:MaxValueValidation MaxValue=&quot;12:00&quot; /&gt;
+&lt;/material:TimePickerField&gt;
+</code></pre>
+<table class="table">
+<thead>
+<tr>
+<th>Light</th>
+<th>Dark</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a target = "_blank" rel="noopener noreferrer" title="MAUI Material Input" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/timepickerfield-validation-light-android.gif"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/timepickerfield-validation-light-android.gif"  class="img-fluid" alt="MAUI Material Input" /></a></td>
+<td><a target = "_blank" rel="noopener noreferrer" title="MAUI Material Input" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/timepickerfield-validation-dark-android.gif"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/timepickerfield-validation-dark-android.gif"  class="img-fluid" alt="MAUI Material Input" /></a></td>
+</tr>
+</tbody>
+</table>
+<h3>FormView Compatibility</h3>
+<p>TimePickerField is fully compatible with <a href="https://enisn-projects.io/docs/en/inputkit/latest/components/controls/FormView">FormView</a>. You can use it inside a FormView and it will work as expected.</p>
+<pre ><code class="language-xml"> &lt;input:FormView Spacing=&quot;20&quot;&gt;
+    &lt;material:TimePickerField Title=&quot;Pick a time&quot; Icon=&quot;{FontImageSource FontFamily=MaterialRegular, Glyph={x:Static m:MaterialRegular.Alarm}}&quot;&gt;
+        &lt;validation:MinValueValidation MinValue=&quot;09:00&quot; /&gt;
+        &lt;validation:MaxValueValidation MaxValue=&quot;12:00&quot; /&gt;
+    &lt;/material:TimePickerField&gt;
+
+    &lt;Button StyleClass=&quot;TextButton&quot;
+            Text=&quot;Submit&quot;
+            input:FormView.IsSubmitButton=&quot;True&quot;/&gt;
+
+&lt;/input:FormView&gt;
+</code></pre>
+<p><a target = "_blank" rel="noopener noreferrer" title="MAUI Material Input" href="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/timepickerfield-formview-light-android.gif"><img  src="../../../../../../../../raw.githubusercontent.com/enisn/UraniumUI/rel-2.2/docs/en/themes/material/components/images/timepickerfield-formview-light-android.gif"  class="img-fluid" alt="MAUI Material Input" /></a></p>
+
+                                </article>
+
+                                <div id="crawler_link" style="display:none;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Bar -->
+                <div class="col-md-2 docs-page-index position-relative bg-light">
+                    <div class="doc-social-btns">
+                        Share on :
+                        <a href="#" target="_blank" class="share-button twitter" id="TwitterShareLink" title="Twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#" target="_blank" class="share-button linkedin" id="LinkedinShareLink" title="LinkedIn">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="#" target="_blank" class="share-button email" id="EmailShareLink" title="E-mail">
+                            <i class="fa fa-envelope-square"></i>
+                        </a>
+                    </div>
+                    <div id="scroll-index" class="docs-inner-anchors mt-2">
+                        <h5>In this document</h5>
+                        <nav id="docs-sticky-index" class="navbar index-scroll">
+                        </nav>
+
+                        <div class="row">
+                            <div class="col p-0 py-3">
+                                <a href="javascript:;" class="scroll-top-btn"><i class="fa fa-chevron-up"></i> Go to top</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+        
+    </div>
+
+    <script  src="../../../../../../../__bundles/LeptonXLite.Global.FC83D7F8612BD7822731B6AA6B2E1931cbc7.js?_v=638086745563896856"></script>
+<script  src="../../../../../../../libs/timeago/locales/jquery.timeago.enf9f5.js?_v=637914133550000000"></script>
+
+
+    <script src="https://enisn-projects.io/Abp/ApplicationConfigurationScript"></script>
+    <script src="https://enisn-projects.io/Abp/ServiceProxyScript"></script>
+
+    
+<script  src="../../../../../../../__bundles/Volo.Docs.Pages.Documents.Project.IndexModel.5776DACC59CA0A0ADAD25FA8CB5F368D107d.js?_v=638086745565050551"></script>
+
+
+
+    
+
+    <script src="../../../../../../../../cdn.jsdelivr.net/npm/masonry-layout%404.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script><script src="https://enisn-projects.io/cms-kit/global-resources/script"></script>
+
+</body>
+
+<!-- Mirrored from enisn-projects.io/docs/en/uranium/latest/themes/material/components/TimePickerField by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 09 Jan 2023 10:16:31 GMT -->
+</html>
